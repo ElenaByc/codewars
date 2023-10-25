@@ -25,6 +25,8 @@ is_prime(2)   true
 is_prime(-1)  false
 */
 
+import java.util.HashMap;
+
 public class Prime {
     public static void main(String[] args) {
         System.out.println(isPrime(0));
@@ -48,6 +50,8 @@ public class Prime {
         System.out.println(isPrime(-5));
         System.out.println(isPrime(-8));
         System.out.println(isPrime(-41));
+
+        HashMap<Integer, Integer> hm = new HashMap<>();
     }
 
     public static boolean isPrime(int num) {
