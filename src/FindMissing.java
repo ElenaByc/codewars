@@ -1,3 +1,8 @@
+/*
+6 kyu
+Find the missing term in an Arithmetic Progression
+https://www.codewars.com/kata/52de553ebb55d1fca3000371g
+ */
 public class FindMissing {
     public static void main(String[] args) {
         int[] arr1 = {3, 5, 9, 11};
@@ -11,12 +16,12 @@ public class FindMissing {
         // numbers[0], numbers[0] + 1 * d, ... numbers[0] + n * d
         int n = numbers.length;
         int d = (numbers[n - 1] - numbers[0]) / n;
-        System.out.println("d = " + d);
+//        System.out.println("d = " + d);
         if (d == 0) return numbers[0];
         int num = numbers[0];
 
-        for (int i = 0; i < n; i++) {
-            if (numbers[i] != num) {
+        for (int number : numbers) {
+            if (number != num) {
                 return num;
             }
             num += d;
